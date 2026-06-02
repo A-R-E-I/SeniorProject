@@ -57,7 +57,10 @@ input
 body
 {
 	background-image:url("https://i.pinimg.com/originals/cb/f9/4e/cbf94e30397c676b016bd576115bc710.gif");
-	background-size: 70%;
+	background-size: cover;          
+	background-position: center;     
+	background-repeat: no-repeat;    
+	background-attachment: fixed;   
 }
 
 img
