@@ -1,10 +1,10 @@
 body 
 {
     background-image:url("https://i.pinimg.com/originals/cc/db/60/ccdb60a45d19670db224553a3d301828.gif");
-    background-size:100%; 
-    font: sans-serif; 
-    text-align: center;
-    
+	background-size: cover;          
+	background-position: center;     
+	background-repeat: no-repeat;    
+	background-attachment: fixed;   
 }
 
 div[id="menuselect"]
