@@ -26,6 +26,17 @@ function ShowGrid()
 	localStorage.setItem("science4", point400);
 	localStorage.setItem("science5", point500);
 	localStorage.setItem("history1", point100);
+	localStorage.setItem("history2", point200);
+	localStorage.setItem("history3", point300);
+	localStorage.setItem("history4", point400);
+	localStorage.setItem("history5", point500);
+	localStorage.setItem("geography1", point100);
+	localStorage.setItem("geography2", point200);
+	localStorage.setItem("geography3", point300);
+	localStorage.setItem("geography4", point400);
+	localStorage.setItem("geography5", point500);
+
+
 	window.location.href = "Jeopardy2.html";
 }
 

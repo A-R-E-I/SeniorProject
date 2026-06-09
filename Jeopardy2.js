@@ -20,6 +20,18 @@ function addListener()
 	document.getElementById("400science").addEventListener("click", Science400);
 	document.getElementById("500science").addEventListener("click", Science500);
 	document.getElementById("100history").addEventListener("click", History100);
+	document.getElementById("200history").addEventListener("click", History200);
+	document.getElementById("300history").addEventListener("click", History300);
+	document.getElementById("400history").addEventListener("click", History400);
+	document.getElementById("500history").addEventListener("click", History500);
+	document.getElementById("100geography").addEventListener("click", Geography100);
+	document.getElementById("200geography").addEventListener("click", Geography200);
+	document.getElementById("300geography").addEventListener("click", Geography300);
+	document.getElementById("400geography").addEventListener("click", Geography400);
+	document.getElementById("500geography").addEventListener("click", Geography500);
+
+	
+	
 	document.getElementById("addpoint").addEventListener("click", AddScore);
 	document.getElementById("subpoint").addEventListener("click", SubScore);
 	document.getElementById("addpoint2").addEventListener("click", AddScore2);
@@ -49,6 +61,17 @@ function addListener()
 	science4 = localStorage.getItem("science4");
 	science5 = localStorage.getItem("science5");
 	history1 = localStorage.getItem("history1");
+	history2 = localStorage.getItem("history2");
+	history3 = localStorage.getItem("history3");
+	history4 = localStorage.getItem("history4");
+	history5 = localStorage.getItem("history5");
+	geography1 = localStorage.getItem("geography1");
+	geography2 = localStorage.getItem("geography2");
+	geography3 = localStorage.getItem("geography3");
+	geography4 = localStorage.getItem("geography4");
+	geography5 = localStorage.getItem("geography5");
+
+
 	ShowTeam()
 	
 	if(math1 == "selected")
@@ -106,6 +129,51 @@ function addListener()
 		document.getElementById("100history").disabled = true;
 	}
 	
+	if(history2 == "selected")
+	{
+		document.getElementById("200history").disabled = true;
+	}
+
+	if(history3 == "selected")
+	{
+		document.getElementById("300history").disabled = true;
+	}
+
+	if(history4 == "selected")
+	{
+		document.getElementById("400history").disabled = true;
+	}
+
+	if(history5 == "selected")
+	{
+		document.getElementById("500history").disabled = true;
+	}
+
+	if(geography1 == "selected")
+	{
+		document.getElementById("100geography").disabled = true;
+	}
+
+	if(geography2 == "selected")
+	{
+		document.getElementById("200geography").disabled = true;
+	}
+
+	if(geography3 == "selected")
+	{
+		document.getElementById("300geography").disabled = true;
+	}
+
+	if(geography4 == "selected")
+	{
+		document.getElementById("400geography").disabled = true;
+	}
+
+	if(geography5 == "selected")
+	{
+		document.getElementById("500geography").disabled = true;
+	}
+
 }
 
 function ShowTeam()
@@ -195,6 +263,56 @@ function History100()
 {
 	window.location.href = "history100.html";
 }
+
+function History200()
+{
+    window.location.href = "history200.html";
+}
+
+function History300()
+{
+    window.location.href = "history300.html";
+}
+
+function History400()
+{
+    window.location.href = "history400.html";
+}
+
+function History500()
+{
+    window.location.href = "history500.html";
+}
+
+function Geography100()
+{
+    window.location.href = "geography100.html";
+}
+
+function Geography200()
+{
+    window.location.href = "geography200.html";
+}
+
+function Geography300()
+{
+    window.location.href = "geography300.html";
+}
+
+function Geography400()
+{
+    window.location.href = "geography400.html";
+}
+
+function Geography500()
+{
+    window.location.href = "geography500.html";
+}
+
+
+
+
+
 
 function AddScore()
 {
