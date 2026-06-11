@@ -1,0 +1,74 @@
+/* Background (same style as your board) */
+body {
+    background-image: url("https://i.pinimg.com/originals/cb/f9/4e/cbf94e30397c676b016bd576115bc710.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center container */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    zoom: 150%;
+}
+
+/* Question text */
+h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+
+    /* ⭐ More attractive text */
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 2px black;
+
+    margin-bottom: 50px;
+}
+
+/* Answer button */
+button {
+    width: 200px;
+    height: 60px;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #003399;
+    color: white;
+    border: 3px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Hover */
+button:hover {
+    background-color: #0044cc;
+}
+
+/* Return button */
+#return {
+    color: red;
+    background-color: black;
+    text-align: center;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-size: 22px;
+    width: 120px;
+    height: 45px;
+    border: 2px solid red;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#return:hover {
+    background-color: #222;
+}

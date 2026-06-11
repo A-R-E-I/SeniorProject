@@ -1,81 +1,132 @@
-.flex-container > table, th, td
-{
-	border: 1px solid black;
-	border-collapse: collapse;
-	zoom:150%;
-	margin-top:0%;
+/* Table styling */
+.flex-container > table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    zoom: 150%;
+    margin-top: 0%;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
-button
-{
-	width:150px;
-	height:50px;
+th {
+    padding: 10px;
+    font-size: 22px;
+    background-color: #003399;
+    color: white;
 }
 
-button[name="select"]
-{
-	width:100px;
-	height:40px;
+td {
+    text-align: center;
+    padding: 5px;
 }
 
-input
-{
-	width:100px;
+/* Main question buttons */
+button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #003399;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
 }
 
-.flex-container
-{
-	display: flex;
-    flex-direction:row;
+button:hover:not(:disabled) {
+    background-color: #0044cc;
 }
 
-.flex-container-2 > div[id="team 1"], [id="team 2"], [id="team 3"], [id="team 4"]
-{
-	margin-left:35%;
-	zoom:110%;
-	font-size:20px;
-	border: 1px solid black;
-	border-collapse: collapse;
-	text-align:center;
-	padding-bottom: 15px;
+button:disabled {
+    background-color: gray;
+    color: #dddddd;
 }
 
-.flex-container-2 > div[id="Jeoteams"]
-{
-	margin-left:5%;
-	zoom:110%;
-	font-size:25px;
+/* Score + / - buttons */
+button[name="select"] {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #006600;
+    color: white;
+    border: 2px solid black;
 }
 
-.flex-container-2
-{
-	display: flex;
-    flex-direction:column;
+button[name="select"]:hover {
+    background-color: #009900;
 }
 
-body
-{
-	background-image:url("https://i.pinimg.com/originals/cb/f9/4e/cbf94e30397c676b016bd576115bc710.gif");
-	background-size: cover;          
-	background-position: center;     
-	background-repeat: no-repeat;    
-	background-attachment: fixed;   
+/* Score input boxes */
+input {
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
 }
 
-img
-{
-	zoom:150%;
-	margin-left: 80%;
+/* Main layout */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }
 
-button[id="return"]
-{
-	color: red;
-	background-color: black;
-	text-align:center;
-	margin-left:0.2%;
-	margin-right:45%;
-	margin-top:1.5%;
-	font-size: 25px;
-	zoom:100%;
+/* Team boxes */
+.flex-container-2 > div[id="team 1"],
+.flex-container-2 > div[id="team 2"],
+.flex-container-2 > div[id="team 3"],
+.flex-container-2 > div[id="team 4"] {
+    margin-left: 35%;
+    zoom: 110%;
+    font-size: 20px;
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding-top: 10px;
+    border-radius: 6px;
+}
+
+/* Team container */
+.flex-container-2 > div[id="Jeoteams"] {
+    margin-left: 5%;
+    zoom: 110%;
+    font-size: 25px;
+}
+
+/* Team layout */
+.flex-container-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Background */
+body {
+    background-image: url("https://i.pinimg.com/originals/cb/f9/4e/cbf94e30397c676b016bd576115bc710.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Panda GIF */
+img {
+    zoom: 150%;
+    margin-left: 80%;
+}
+
+/* Menu button */
+button[id="return"] {
+    color: red;
+    background-color: black;
+    text-align: center;
+    margin-left: 0.2%;
+    margin-right: 45%;
+    margin-top: 1.5%;
+    font-size: 25px;
+    zoom: 100%;
+    border: 2px solid red;
+    border-radius: 6px;
+}
+
+button[id="return"]:hover {
+    background-color: #222;
 }

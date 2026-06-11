@@ -1,17 +1,22 @@
 window.addEventListener("load", addListener);
 
-function addListener()
-{
-	Score2 = 200;
-	point200 = "selected";
-	localStorage.setItem("NumScore", Score2);
-	localStorage.setItem("science2", point200);
-	document.getElementById("option1").addEventListener("click", Points);
-	
+function addListener() {
+    Score = 200;
+    localStorage.setItem("NumScore", Score);
+    localStorage.setItem("science2", "selected");
+
+    document.getElementById("option1").onclick = correct;
+    document.getElementById("option2").onclick = wrong;
+    document.getElementById("option3").onclick = wrong;
+    document.getElementById("option4").onclick = wrong;
 }
 
-function Points()
-{
-	alert("Correct");
-	window.location.href = "Jeopardy2.html";
+function correct() {
+    alert("Correct!");
+    window.location.href = "Jeopardy2.html";
+}
+
+function wrong() {
+    alert("Wrong!");
+    window.location.href = "Jeopardy2.html";
 }

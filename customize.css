@@ -1,47 +1,83 @@
-body 
-{
-    background-image:url("https://i.pinimg.com/originals/cc/db/60/ccdb60a45d19670db224553a3d301828.gif");
-	background-size: cover;          
-	background-position: center;     
-	background-repeat: no-repeat;    
-	background-attachment: fixed;   
+/* Background */
+body {
+    background-image: url("https://i.pinimg.com/originals/cc/db/60/ccdb60a45d19670db224553a3d301828.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
-div[id="menuselect"]
-{
-	margin-top:7.25%;
-    border: 4px solid darkgreen;
+/* Menu box */
+div[id="menuselect"] {
+    margin-top: 7.25%;
+    margin-left: 30%;
+    margin-right: 30%;
     background-color: lightcyan;
-	border-collapse: collapse;
-	margin-left:30%;
-	margin-right:30%;
-	zoom:100%;
+    border: 4px solid darkgreen;
+    border-collapse: collapse;
+    zoom: 100%;
+    text-align: center;
+    padding: 25px 0;
+    border-radius: 10px;
 }
-button 
-{
-    padding: 40px;
+
+/* Menu buttons */
+button {
     width: 600px;
-    background-color: #ccffcc; 
+    padding: 40px;
+    margin: 20px auto;
+    background-color: #ccffcc;
     color: teal;
-    font-size:45px;
-    font-family: impact;
-	margin: 20px auto;
-	zoom:120%;
+
+    /* ⭐ More attractive text */
+    font-size: 48px;
+    font-family: Impact, Arial Black, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px white;
+
+    zoom: 120%;
+    border: 3px solid darkgreen;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-img[id="imgpanda"]
-{
-	width: 56px;
+/* Welcome title */
+#welcomeTitle {
+    font-family: Impact, Arial Black, sans-serif;
+    font-size: 60px;
+    color: darkgreen;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0px white;
+    margin-bottom: 20px;
 }
 
-img[id="imgjeopardy"]
-{
-	width: 46px;
-	zoom: 400%;
+/* Subtitle ("Click enter to start") */
+#welcomeSubtitle {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    color: teal;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px white;
 }
 
-img[id="imgcalc"]
-{
-	width: 46px;
-	zoom: 150%;
+
+/* Simple hover */
+button:hover {
+    background-color: #b3ffb3;
 }
+
+/* Panda icon */
+img[id="imgpanda"] {
+    width: 56px;
+}
+
+/* Jeopardy icon */
+img[id="imgjeopardy"] {
+    width: 46px;
+    zoom: 100%;
+}
+
+
